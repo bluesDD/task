@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form action="/" method="POST">
+      name: <input name="name" type="text" />
+      age: <input name="age" type="text" />
+      <button type="submit">Save</button>
+    </form>
+<hr />
+    {% for user in users %}
+    <p>{{ user.name }} = {{ user.age }}</p>
+    {% endfor %}
+    </body>
+</html>
